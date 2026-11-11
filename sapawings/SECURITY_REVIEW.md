@@ -25,3 +25,7 @@ A static pass is not a security certification. Outstanding limitations are deplo
 ## Phase-1 agency extension
 
 The expanded catalog/planner is standard-library-only and has no upstream imports, credentials, shell calls, network or publish methods. Brand isolation and fail-closed rehearsal policy are preflight checks, not authenticated authorization. The legacy workflow is still single-brand; never route the three inactive brands through it. See ARCHITECTURE.md for the sampled review of ShortGPT, Editly and the two skill repositories. None was installed or executed; dependency/lockfile and runtime security review remains outstanding.
+
+## Stage 2 status
+
+See [STAGE2.md](STAGE2.md) for the persistent authenticated local task rehearsal, 38 passing tests and dependency findings. Upstream fixture execution is blocked by unresolved version-matched advisories. The local token/capability boundary is not a deployed authenticated service; no model, live publishing or PMS adapter exists. Earlier phase-1 limitations remain historical context except where STAGE2.md describes the implemented local store.

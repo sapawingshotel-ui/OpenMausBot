@@ -1,0 +1,503 @@
+{
+  "audit_date": "2026-11-11",
+  "source_commit": "613ed01fdc2b04860ef63e3dbdcb46d7e6b1666d",
+  "lock_sha256": "ebea3c575eb7dfc9242dc87be13b28fd17984ad22595b972e8877e0262ed7912",
+  "source": "https://registry.npmjs.org/-/npm/v1/security/advisories/bulk",
+  "method": "Public package names/locked versions submitted; semver.satisfies filtering; deduplicated by package+advisory URL",
+  "lock_packages": 1188,
+  "queried_names": 1053,
+  "affected_package_names": 12,
+  "unique_package_advisories": 46,
+  "severity_counts": {
+    "moderate": 18,
+    "high": 23,
+    "low": 5
+  },
+  "reachability": "not assessed; counts combine dev/build/runtime dependencies; multiple advisories may describe related issues",
+  "upstream_execution": "blocked_pending_remediation_and_review",
+  "findings": [
+    {
+      "package": "@vitest/mocker",
+      "versions": [
+        "4.1.11"
+      ],
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-qxg6-89mg-rqv8",
+      "title": "Vitest: Code injection via unauthenticated manual mock registration",
+      "range": ">=2.1.0-beta.7 <4.1.12"
+    },
+    {
+      "package": "@vitest/mocker",
+      "versions": [
+        "4.1.11"
+      ],
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-xp26-3454-mjgp",
+      "title": "Vitest: Windows backslash traversal bypasses the @vitest/mocker redirect allowlist fix",
+      "range": ">=4.1.11 <4.1.12"
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "versions": [
+        "0.8.13"
+      ],
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-6gmq-8vp8-gcm6",
+      "title": "xmldom: XML fragment injection via invalid EntityReference.nodeName during requireWellFormed serialization",
+      "range": ">=0.7.0 <=0.8.14"
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "versions": [
+        "0.8.13"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-w2rr-34g9-rvrj",
+      "title": "xmldom: Element name injection via createElement() bypasses requireWellFormed",
+      "range": ">=0.7.0 <=0.8.13"
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "versions": [
+        "0.8.13"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-4w3w-2rp5-g8jm",
+      "title": "xmldom: Attribute name injection via setAttribute() bypasses requireWellFormed",
+      "range": ">=0.7.0 <=0.8.13"
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "versions": [
+        "0.8.13"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-c7q8-3ch8-vqpv",
+      "title": "xmldom: Processing Instruction Target Injection Bypasses requireWellFormed",
+      "range": ">=0.7.0 <=0.8.14"
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "versions": [
+        "0.8.13"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-27p8-2357-5qqv",
+      "title": "xmldom: DocType `name` Injection Bypasses requireWellFormed",
+      "range": ">=0.7.0 <=0.8.14"
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "versions": [
+        "0.8.13"
+      ],
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-6h8r-xr42-gp59",
+      "title": "xmldom: Parser silently accepts a not-well-formed end tag whose name is followed by a line break and trailing content",
+      "range": ">=0.7.0 <=0.8.14"
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "versions": [
+        "0.8.13"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-8344-3jmq-59r6",
+      "title": "xmldom: Quadratic-time attribute deduplication",
+      "range": ">=0.7.0 <=0.8.14"
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "versions": [
+        "0.8.13"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-x4fp-j954-r2f4",
+      "title": "xmldom: End-tag Whitespace-Trim Regex ReDoS \u2014 quadratic backtracking in the 0.8.x end-tag parser",
+      "range": ">=0.7.0 <=0.8.14"
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "versions": [
+        "0.8.13"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-965w-775f-mr7g",
+      "title": "xmldom: Quadratic-memory consumption",
+      "range": ">=0.7.0 <=0.8.14"
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "versions": [
+        "0.8.13"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-93r5-fhx6-vmg9",
+      "title": "xmldom: Quadratic-time parsing via the malformed-input recovery path \u2014 `parseElementStartPart` re-scan and `normalize()` adjacent-text merge",
+      "range": ">=0.7.0 <=0.8.14"
+    },
+    {
+      "package": "brace-expansion",
+      "versions": [
+        "5.0.9",
+        "1.1.18",
+        "2.1.4"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-qhr7-859c-m2p7",
+      "title": "brace-expansion: DoS via uncontrolled recursion on nested brace groups causing stack exhaustion",
+      "range": ">=4.0.0 <5.0.11"
+    },
+    {
+      "package": "brace-expansion",
+      "versions": [
+        "1.1.18",
+        "2.1.4",
+        "5.0.9"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+      "title": "brace-expansion: DoS via uncontrolled recursion in parseCommaParts causing stack exhaustion",
+      "range": "<1.1.19"
+    },
+    {
+      "package": "brace-expansion",
+      "versions": [
+        "1.1.18",
+        "2.1.4",
+        "5.0.9"
+      ],
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-q2hr-2g5m-vwhr",
+      "title": "brace-expansion: Quadratic-time expansion of the `{a},b}` rewrite causes CPU denial of service",
+      "range": "<1.1.21"
+    },
+    {
+      "package": "electron",
+      "versions": [
+        "43.7.9"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-jr5w-w6x2-84p9",
+      "title": "Electron: Mitigation for compromised eMudhra intermediate certificates",
+      "range": ">=43.0.0-alpha.1 <43.8.1"
+    },
+    {
+      "package": "js-yaml",
+      "versions": [
+        "4.3.1"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-2883-xcg3-v3hh",
+      "title": "js-yaml: maxTotalMergeKeys does not limit CPU use for empty merge sources",
+      "range": ">=4.0.0 <4.3.2"
+    },
+    {
+      "package": "katex",
+      "versions": [
+        "0.16.47"
+      ],
+      "severity": "low",
+      "url": "https://github.com/advisories/GHSA-238p-pmpm-9mq7",
+      "title": "KaTeX: Existing prototype pollution can bypass trust restrictions",
+      "range": ">=0.11.0 <0.18.2"
+    },
+    {
+      "package": "minimatch",
+      "versions": [
+        "10.2.6",
+        "9.0.9"
+      ],
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-g3hv-75wg-m249",
+      "title": "minimatch has potential denial of service via globparts amplification",
+      "range": ">=7.0.0 <11.0.1"
+    },
+    {
+      "package": "sharp",
+      "versions": [
+        "0.35.2"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-rgj7-g3m4-5g8c",
+      "title": "sharp: Vulnerabilities in libheif: GHSA-g89c-p67h-r497 and GHSA-2jg2-4ch7-h545",
+      "range": "<0.35.4"
+    },
+    {
+      "package": "sharp",
+      "versions": [
+        "0.35.2"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-wq5f-xc86-pv6w",
+      "title": "sharp : Vulnerability in librsvg dependency CVE-2026-96889",
+      "range": "<0.35.5"
+    },
+    {
+      "package": "source-map-js",
+      "versions": [
+        "1.2.1"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-68fv-2mgg-jv7q",
+      "title": "source-map-js allows event-loop denial of service through indexed source-map section offsets",
+      "range": ">=1.0.0 <1.2.2"
+    },
+    {
+      "package": "undici",
+      "versions": [
+        "7.29.0",
+        "6.28.0"
+      ],
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-3wwx-pv8p-q78v",
+      "title": "undici vulnerable to Denial of Service via unhandled error in WebSocket permessage-deflate decompression",
+      "range": ">=7.28.0 <7.29.1"
+    },
+    {
+      "package": "undici",
+      "versions": [
+        "7.29.0"
+      ],
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-pmjh-fq2x-6v4x",
+      "title": "undici vulnerable to Denial of Service via orphaned RetryHandler response body",
+      "range": ">=7.11.0 <7.29.1"
+    },
+    {
+      "package": "undici",
+      "versions": [
+        "7.29.0",
+        "6.28.0"
+      ],
+      "severity": "low",
+      "url": "https://github.com/advisories/GHSA-r53p-7pc4-xj5r",
+      "title": "undici vulnerable to downstream response splitting via retry interceptor",
+      "range": ">=7.0.0 <7.29.1"
+    },
+    {
+      "package": "undici",
+      "versions": [
+        "7.29.0",
+        "6.28.0"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-rfgv-xxqx-mfg5",
+      "title": "undici vulnerable to Denial of Service via unrequested WebSocket subprotocol",
+      "range": ">=7.0.0 <7.29.1"
+    },
+    {
+      "package": "undici",
+      "versions": [
+        "7.29.0"
+      ],
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-3xpg-4rpp-hhhm",
+      "title": "undici vulnerable to Denial of Service via unbounded decompression of compressed responses",
+      "range": ">=7.15.0 <7.29.1"
+    },
+    {
+      "package": "undici",
+      "versions": [
+        "7.29.0"
+      ],
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-2jfj-6hjv-fm6j",
+      "title": "undici vulnerable to cross-user cookie disclosure via Set-Cookie caching in shared caches",
+      "range": ">=7.0.0 <7.29.1"
+    },
+    {
+      "package": "undici",
+      "versions": [
+        "7.29.0"
+      ],
+      "severity": "low",
+      "url": "https://github.com/advisories/GHSA-2gqq-gqf2-x968",
+      "title": "undici vulnerable to response truncation via oversized chunked responses in the dump interceptor",
+      "range": ">=7.1.0 <7.29.1"
+    },
+    {
+      "package": "undici",
+      "versions": [
+        "7.29.0"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-w293-vg96-wgc3",
+      "title": "undici vulnerable to TLS certificate validation bypass via dropped connect options in BalancedPool",
+      "range": ">=7.24.1 <7.29.1"
+    },
+    {
+      "package": "undici",
+      "versions": [
+        "7.29.0"
+      ],
+      "severity": "low",
+      "url": "https://github.com/advisories/GHSA-8436-99hf-9mmv",
+      "title": "undici vulnerable to caching and replay of unsafe HTTP method responses",
+      "range": ">=7.0.0 <7.29.1"
+    },
+    {
+      "package": "undici",
+      "versions": [
+        "7.29.0"
+      ],
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-rx4f-c7p8-82vq",
+      "title": "undici vulnerable to Denial of Service via WebSocketStream unclean close",
+      "range": ">=7.0.0 <7.29.1"
+    },
+    {
+      "package": "undici",
+      "versions": [
+        "8.11.2",
+        "7.29.0",
+        "6.28.0"
+      ],
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-4qv8-2p9j-2685",
+      "title": "undici vulnerable to Denial of Service via unbounded memory in the EventSource parser",
+      "range": ">=8.0.0 <8.12.2"
+    },
+    {
+      "package": "undici",
+      "versions": [
+        "8.11.2",
+        "7.29.0"
+      ],
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-f72v-6w45-q472",
+      "title": "undici vulnerable to Subresource Integrity bypass via non-lowercase algorithm tokens",
+      "range": ">=8.0.0 <8.12.2"
+    },
+    {
+      "package": "undici",
+      "versions": [
+        "8.11.2",
+        "7.29.0",
+        "6.28.0"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-xjj6-f33q-929c",
+      "title": "undici vulnerable to Denial of Service via unhandled error on excessive content-encodings",
+      "range": ">=8.0.0 <8.12.2"
+    },
+    {
+      "package": "undici",
+      "versions": [
+        "8.11.2",
+        "7.29.0"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-4w7w-5xrc-9h26",
+      "title": "undici vulnerable to cache poisoning and cross-user disclosure via cross-origin redirects",
+      "range": ">=8.0.0 <8.12.2"
+    },
+    {
+      "package": "undici",
+      "versions": [
+        "8.11.2",
+        "7.29.0",
+        "6.28.0"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-2m5v-pch6-74hx",
+      "title": "undici vulnerable to TLS certificate validation bypass via dropped tls options in Agent",
+      "range": ">=8.0.0 <8.12.2"
+    },
+    {
+      "package": "undici",
+      "versions": [
+        "8.11.2",
+        "7.29.0",
+        "6.28.0"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-qrxm-fqhp-jwvm",
+      "title": "undici vulnerable to Denial of Service via TLS 1.2 certificate-changing renegotiation",
+      "range": ">=8.0.0 <8.12.2"
+    },
+    {
+      "package": "undici",
+      "versions": [
+        "8.11.2",
+        "7.29.0",
+        "6.28.0"
+      ],
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-9fm3-97px-rjf6",
+      "title": "undici WebSocket client vulnerable to Denial of Service via unbounded automatic PONG buffering",
+      "range": ">=8.0.0 <8.12.2"
+    },
+    {
+      "package": "undici",
+      "versions": [
+        "8.11.2",
+        "7.29.0"
+      ],
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-55wc-3pg8-jfw6",
+      "title": "undici vulnerable to Denial of Service via unhandled exception in the decompress interceptor",
+      "range": ">=8.0.0 <8.12.2"
+    },
+    {
+      "package": "vite",
+      "versions": [
+        "7.3.6"
+      ],
+      "severity": "low",
+      "url": "https://github.com/advisories/GHSA-9jrq-w75r-8gcw",
+      "title": "Vite: Cross origin script execution through Vite custom middleware",
+      "range": ">=7.0.0 <=7.3.6"
+    },
+    {
+      "package": "vite",
+      "versions": [
+        "7.3.6"
+      ],
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-rq7h-c2jc-7f22",
+      "title": "Vite: Files outside `server.fs.allow` could be served when project paths match system paths on non-Windows machine",
+      "range": ">=7.0.0 <=7.3.6"
+    },
+    {
+      "package": "vite",
+      "versions": [
+        "7.3.6"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-587h-7wmj-h5pm",
+      "title": "launch-editor: `fs.existsSync()` existence check can be bypassed on Windows",
+      "range": ">=7.0.0 <=7.3.6"
+    },
+    {
+      "package": "vite",
+      "versions": [
+        "7.3.6"
+      ],
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-698v-4r3x-3vcv",
+      "title": "launch-editor: escapeCmdArgs() omits % escaping on Windows",
+      "range": ">=7.0.0 <=7.3.6"
+    },
+    {
+      "package": "vite",
+      "versions": [
+        "7.3.6"
+      ],
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-r825-w8mm-5pxw",
+      "title": "launch-editor: Editor CLI flag misinterpretation causing arbitrary command execution for some editors",
+      "range": ">=7.0.0 <=7.3.6"
+    },
+    {
+      "package": "zod",
+      "versions": [
+        "4.4.3"
+      ],
+      "severity": "high",
+      "url": "https://github.com/advisories/GHSA-mrhx-c7xc-m3w5",
+      "title": "Zod can exhaust memory while validating oversized constrained collections",
+      "range": "<4.6.6"
+    }
+  ]
+}
