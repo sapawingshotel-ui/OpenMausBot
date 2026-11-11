@@ -1,0 +1,17 @@
+{
+  "patch": "root runtime undici 8.11.2 -> 8.12.2",
+  "sources": [
+    "https://registry.npmjs.org/undici/8.12.2",
+    "https://github.com/nodejs/undici/releases/tag/v8.12.2"
+  ],
+  "updated_version_current_advisory_matches": 0,
+  "prior_scan_package_advisories_remaining": 46,
+  "remaining_severity": {
+    "moderate": 18,
+    "high": 23,
+    "low": 5
+  },
+  "compatibility": "static checks only; no upstream runtime or fixture executed",
+  "gate": "still_blocked",
+  "note": "Only undici 8.12.2 was freshly queried; remaining counts are recalculated from the prior full scan, not a fresh complete-lockfile scan."
+}
