@@ -58,3 +58,7 @@ See [STAGE2.md](STAGE2.md) for the persistent authenticated local task rehearsal
 ## Stage 3 status
 
 [STAGE3.md](STAGE3.md) covers versioned brand memory, memory-bound task/QC checks, 51 passing local tests, all 17 affected-version dependency paths and a focused root undici 8.12.2 patch. Upstream execution remains blocked. Memory/task databases are separate local transactions; live publication requires serialized authorization and immediate memory revalidation. No model or live publication adapter has been deployed.
+
+## Stage 4 status
+
+See [STAGE4.md](STAGE4.md) and [STAGE4_SCAN.json](STAGE4_SCAN.json): explicit same-major undici overrides, a fresh full scan reduced to 28 package–advisory pairs, and a private real-photo carousel draft awaiting visual/rights QC. Runtime execution remains disabled; 51 local tests pass.
