@@ -24,8 +24,9 @@ def token_hash(token):
 
 
 class TaskStore:
-    def __init__(self, path, principals, clock=time.time):
+    def __init__(self, path, principals, clock=time.time, memory=None):
         self.clock=clock
+        self.memory=memory
         self.config=load_config(); validate(self.config)
         self.principals=json.loads(json.dumps(principals))
         self.stages=[s['id'] for s in self.config['stages']]
@@ -70,7 +71,16 @@ class TaskStore:
     def _payload(self,brand,payload):
         if not isinstance(payload,dict) or not payload.get('brief'): raise ValueError('Brief required')
         if any(e.get('brand_id')!=brand for e in payload.get('evidence',[])): raise ValueError('Cross-brand evidence')
+        self._memory(brand,payload)
         return json.dumps(payload,ensure_ascii=False)
+
+    def _memory(self,brand,payload):
+        snapshot=payload.get('memory_snapshot')
+        if self.memory is not None:
+            if snapshot is None: raise ValueError('Memory-backed task requires a snapshot')
+            self.memory.verify_snapshot(brand,snapshot)
+        elif snapshot is not None:
+            raise ValueError('Memory-backed task requires a trusted memory store')
 
     def create(self,token,brand,task,payload):
         actor=self.auth(token,brand,'create'); body=self._payload(brand,payload)
@@ -111,6 +121,7 @@ class TaskStore:
         with self.db:
             self.db.execute('BEGIN IMMEDIATE');r=self.row(brand,task)
             self._lease(r,actor,lease,revision)
+            self._memory(brand,json.loads(r['payload']))
             if r['stage']!=stage: raise ValueError('Stage changed')
             body=json.dumps(output,ensure_ascii=False)
             digest=seal([r['digest'],stage,output])
@@ -123,6 +134,7 @@ class TaskStore:
         actor=self.auth(token,brand,'work:'+self.owners.get(stage,'unknown'))
         with self.db:
             self.db.execute('BEGIN IMMEDIATE');r=self.row(brand,task);self._lease(r,actor,lease,revision)
+            self._memory(brand,json.loads(r['payload']))
             if r['stage']!=stage: raise ValueError('Stage changed')
             state='held' if r['attempts']>=3 else 'ready'
             self.db.execute('UPDATE tasks SET lease=NULL,lease_until=NULL,actor=NULL,state=? WHERE brand=? AND id=?',(state,brand,task))
@@ -134,6 +146,7 @@ class TaskStore:
         with self.db:
             self.db.execute('BEGIN IMMEDIATE');r=self.row(brand,task)
             if r['stage']!='qc' or r['state']=='held' or r['revision']!=revision or r['digest']!=digest: raise ValueError('Stale or unavailable review')
+            self._memory(brand,json.loads(r['payload']))
             writers={x[0] for x in self.db.execute('SELECT actor FROM artifacts WHERE brand=? AND id=? AND revision=?',(brand,task,revision))}
             if actor in writers: raise PermissionError('Author cannot review own revision')
             reviewers={x[0] for x in self.db.execute('SELECT actor FROM reviews WHERE brand=? AND id=? AND revision=?',(brand,task,revision))}
@@ -152,6 +165,7 @@ class TaskStore:
             if r['stage']!='publishing' or r['revision']!=revision or r['digest']!=digest or r['state']=='held': raise ValueError('Current QC seal required')
             count=self.db.execute('SELECT COUNT(*) FROM reviews WHERE brand=? AND id=? AND revision=? AND digest=?',(brand,task,revision,digest)).fetchone()[0]
             if count!=3: raise ValueError('Three QC reviews required')
+            self._memory(brand,json.loads(r['payload']))
             key=seal([brand,task,revision,digest])
             self.event(brand,task,actor,'publish_rehearsal_blocked')
             return dict(task_key=key,revision=revision,digest=digest,external_writes=False,status='blocked_no_live_adapter_or_publish_authority')

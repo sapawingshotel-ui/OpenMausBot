@@ -125,3 +125,7 @@ Next phase: finish pinned dependency review and isolated fake-engine fixture; th
 ## Stage 2 status
 
 See [STAGE2.md](STAGE2.md) for the persistent authenticated local task rehearsal, 38 passing tests and dependency findings. Upstream fixture execution is blocked by unresolved version-matched advisories. The local token/capability boundary is not a deployed authenticated service; no model, live publishing or PMS adapter exists. Earlier phase-1 limitations remain historical context except where STAGE2.md describes the implemented local store.
+
+## Stage 3 status
+
+[STAGE3.md](STAGE3.md) covers versioned brand memory, memory-bound task/QC checks, 51 passing local tests, all 17 affected-version dependency paths and a focused root undici 8.12.2 patch. Upstream execution remains blocked. Memory/task databases are separate local transactions; live publication requires serialized authorization and immediate memory revalidation. No model or live publication adapter has been deployed.
