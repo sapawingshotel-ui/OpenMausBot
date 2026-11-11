@@ -1,0 +1,994 @@
+{
+  "schema_version": 1,
+  "status": "architecture_validated_offline",
+  "chief": "chief",
+  "departments": [
+    {
+      "id": "research",
+      "name": "Trend Intelligence & Research",
+      "lead": "research_1",
+      "specialists": [
+        "research_1",
+        "research_2",
+        "research_3",
+        "research_4"
+      ],
+      "legacy_routing_role": "Research"
+    },
+    {
+      "id": "content",
+      "name": "Content Strategy",
+      "lead": "content_1",
+      "specialists": [
+        "content_1",
+        "content_2",
+        "content_3",
+        "content_4",
+        "content_5"
+      ],
+      "legacy_routing_role": "Marketing"
+    },
+    {
+      "id": "creative",
+      "name": "Creative Studio",
+      "lead": "creative_1",
+      "specialists": [
+        "creative_1",
+        "creative_2",
+        "creative_3",
+        "creative_4",
+        "creative_5"
+      ],
+      "legacy_routing_role": "Design"
+    },
+    {
+      "id": "video",
+      "name": "Video Production",
+      "lead": "video_1",
+      "specialists": [
+        "video_1",
+        "video_2",
+        "video_3",
+        "video_4",
+        "video_5"
+      ],
+      "legacy_routing_role": "Design"
+    },
+    {
+      "id": "publishing",
+      "name": "Publishing & Community",
+      "lead": "publishing_1",
+      "specialists": [
+        "publishing_1",
+        "publishing_2",
+        "publishing_3"
+      ],
+      "legacy_routing_role": "Marketing"
+    },
+    {
+      "id": "performance",
+      "name": "Performance & Growth",
+      "lead": "performance_1",
+      "specialists": [
+        "performance_1",
+        "performance_2",
+        "performance_3",
+        "performance_4"
+      ],
+      "legacy_routing_role": "Revenue"
+    },
+    {
+      "id": "quality",
+      "name": "Quality Control",
+      "lead": "quality_1",
+      "specialists": [
+        "quality_1",
+        "quality_2",
+        "quality_3"
+      ],
+      "legacy_routing_role": "Quality Control"
+    }
+  ],
+  "roles": [
+    {
+      "id": "chief",
+      "name": "Chief of Staff",
+      "department": "executive",
+      "reports_to": "owner",
+      "responsibility": "Assign work, resolve conflicts, enforce evidence gates and consolidate truthful progress; escalate new permission, spend and important unscoped actions.",
+      "inputs": [
+        "owner brief",
+        "task states"
+      ],
+      "outputs": [
+        "assignments",
+        "consolidated report"
+      ],
+      "tools": [
+        "local planner"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "research_1",
+      "name": "Trend Hunter",
+      "department": "research",
+      "reports_to": "chief",
+      "responsibility": "Rank dated video, hashtag and audio observations; separate observed momentum from speculation and flag usage rights.",
+      "inputs": [
+        "verified business brief",
+        "dated public sources"
+      ],
+      "outputs": [
+        "source registry",
+        "trend report",
+        "audience hypotheses"
+      ],
+      "tools": [
+        "web read",
+        "Drive read"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "research_2",
+      "name": "News Scout",
+      "department": "research",
+      "reports_to": "chief",
+      "responsibility": "Verify travel news and event dates against dated sources; distinguish announcement from confirmed operation.",
+      "inputs": [
+        "verified business brief",
+        "dated public sources"
+      ],
+      "outputs": [
+        "source registry",
+        "trend report",
+        "audience hypotheses"
+      ],
+      "tools": [
+        "web read",
+        "Drive read"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "research_3",
+      "name": "Competitor Analyst",
+      "department": "research",
+      "reports_to": "chief",
+      "responsibility": "Compare boutique hospitality in Đà Lạt, Hội An and Phú Quốc using source-linked observations of layout, type, imagery and audience; do not copy assets.",
+      "inputs": [
+        "verified business brief",
+        "dated public sources"
+      ],
+      "outputs": [
+        "source registry",
+        "trend report",
+        "audience hypotheses"
+      ],
+      "tools": [
+        "web read",
+        "Drive read"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "research_4",
+      "name": "Audience Analyst",
+      "department": "research",
+      "reports_to": "chief",
+      "responsibility": "Segment travel needs and objections using available evidence; label untested assumptions and avoid personal profiling.",
+      "inputs": [
+        "verified business brief",
+        "dated public sources"
+      ],
+      "outputs": [
+        "source registry",
+        "trend report",
+        "audience hypotheses"
+      ],
+      "tools": [
+        "web read",
+        "Drive read"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "content_1",
+      "name": "Content Director",
+      "department": "content",
+      "reports_to": "chief",
+      "responsibility": "Own pillars, objective, audience, calendar and final content brief; reconcile overlaps across campaigns.",
+      "inputs": [
+        "approved brand context",
+        "research evidence"
+      ],
+      "outputs": [
+        "content brief",
+        "bilingual copy",
+        "script",
+        "search intent"
+      ],
+      "tools": [
+        "Drive read",
+        "local drafting"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "content_2",
+      "name": "Creative Writer",
+      "department": "content",
+      "reports_to": "chief",
+      "responsibility": "Develop distinct campaign concepts from verified brand truths, with rationale and practical production needs.",
+      "inputs": [
+        "approved brand context",
+        "research evidence"
+      ],
+      "outputs": [
+        "content brief",
+        "bilingual copy",
+        "script",
+        "search intent"
+      ],
+      "tools": [
+        "Drive read",
+        "local drafting"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "content_3",
+      "name": "Scriptwriter",
+      "department": "content",
+      "reports_to": "chief",
+      "responsibility": "Write timed shot-by-shot scripts with spoken and on-screen text, real footage references and a clear CTA.",
+      "inputs": [
+        "approved brand context",
+        "research evidence"
+      ],
+      "outputs": [
+        "content brief",
+        "bilingual copy",
+        "script",
+        "search intent"
+      ],
+      "tools": [
+        "Drive read",
+        "local drafting"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "content_4",
+      "name": "Copywriter",
+      "department": "content",
+      "reports_to": "chief",
+      "responsibility": "Write natural Vietnamese–English captions, alt text and CTA; retain factual equivalence and archive disclosures.",
+      "inputs": [
+        "approved brand context",
+        "research evidence"
+      ],
+      "outputs": [
+        "content brief",
+        "bilingual copy",
+        "script",
+        "search intent"
+      ],
+      "tools": [
+        "Drive read",
+        "local drafting"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "content_5",
+      "name": "SEO Specialist",
+      "department": "content",
+      "reports_to": "chief",
+      "responsibility": "Map search intent, local terms, titles and descriptive text; do not promise rankings or invent volume.",
+      "inputs": [
+        "approved brand context",
+        "research evidence"
+      ],
+      "outputs": [
+        "content brief",
+        "bilingual copy",
+        "script",
+        "search intent"
+      ],
+      "tools": [
+        "Drive read",
+        "local drafting"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "creative_1",
+      "name": "Art Director",
+      "department": "creative",
+      "reports_to": "chief",
+      "responsibility": "Review composition, hierarchy, restraint and visual consistency; provide specific corrections before production.",
+      "inputs": [
+        "content brief",
+        "reviewed real assets",
+        "brand guidelines"
+      ],
+      "outputs": [
+        "editable source",
+        "rendered preview",
+        "asset provenance"
+      ],
+      "tools": [
+        "Drive read",
+        "local layout",
+        "Canva pending connection"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "creative_2",
+      "name": "Graphic Designer",
+      "department": "creative",
+      "reports_to": "chief",
+      "responsibility": "Build editable feed, Story and carousel layouts with approved photos and mobile-readable text.",
+      "inputs": [
+        "content brief",
+        "reviewed real assets",
+        "brand guidelines"
+      ],
+      "outputs": [
+        "editable source",
+        "rendered preview",
+        "asset provenance"
+      ],
+      "tools": [
+        "Drive read",
+        "local layout",
+        "Canva pending connection"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "creative_3",
+      "name": "Typography Designer",
+      "department": "creative",
+      "reports_to": "chief",
+      "responsibility": "Specify licensed fonts and hierarchy; inspect Vietnamese diacritics, line breaks and mobile-size readability.",
+      "inputs": [
+        "content brief",
+        "reviewed real assets",
+        "brand guidelines"
+      ],
+      "outputs": [
+        "editable source",
+        "rendered preview",
+        "asset provenance"
+      ],
+      "tools": [
+        "Drive read",
+        "local layout",
+        "Canva pending connection"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "creative_4",
+      "name": "Photo Editor",
+      "department": "creative",
+      "reports_to": "chief",
+      "responsibility": "Crop and adjust light/color on real photos while preserving facilities; retain originals and edit provenance.",
+      "inputs": [
+        "content brief",
+        "reviewed real assets",
+        "brand guidelines"
+      ],
+      "outputs": [
+        "editable source",
+        "rendered preview",
+        "asset provenance"
+      ],
+      "tools": [
+        "Drive read",
+        "local layout",
+        "Canva pending connection"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "creative_5",
+      "name": "Brand Designer",
+      "department": "creative",
+      "reports_to": "chief",
+      "responsibility": "Maintain versioned color, type, logo, spacing and image rules for each separate brand.",
+      "inputs": [
+        "content brief",
+        "reviewed real assets",
+        "brand guidelines"
+      ],
+      "outputs": [
+        "editable source",
+        "rendered preview",
+        "asset provenance"
+      ],
+      "tools": [
+        "Drive read",
+        "local layout",
+        "Canva pending connection"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "video_1",
+      "name": "Video Director",
+      "department": "video",
+      "reports_to": "chief",
+      "responsibility": "Own treatment, story rhythm, shot list and production requirements grounded in actual footage.",
+      "inputs": [
+        "script",
+        "reviewed footage",
+        "licensed audio"
+      ],
+      "outputs": [
+        "shot list",
+        "edit specification",
+        "video preview",
+        "subtitle file",
+        "rights record"
+      ],
+      "tools": [
+        "Drive read",
+        "Editly pending audit",
+        "ShortGPT pending audit"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "video_2",
+      "name": "Video Editor",
+      "department": "video",
+      "reports_to": "chief",
+      "responsibility": "Assemble reviewed clips using a declarative edit specification; deliver editable source and rendered preview.",
+      "inputs": [
+        "script",
+        "reviewed footage",
+        "licensed audio"
+      ],
+      "outputs": [
+        "shot list",
+        "edit specification",
+        "video preview",
+        "subtitle file",
+        "rights record"
+      ],
+      "tools": [
+        "Drive read",
+        "Editly pending audit",
+        "ShortGPT pending audit"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "video_3",
+      "name": "Reels/TikTok Specialist",
+      "department": "video",
+      "reports_to": "chief",
+      "responsibility": "Adapt framing, pacing, captions and cover to a verified target channel; channel existence must be checked.",
+      "inputs": [
+        "script",
+        "reviewed footage",
+        "licensed audio"
+      ],
+      "outputs": [
+        "shot list",
+        "edit specification",
+        "video preview",
+        "subtitle file",
+        "rights record"
+      ],
+      "tools": [
+        "Drive read",
+        "Editly pending audit",
+        "ShortGPT pending audit"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "video_4",
+      "name": "Music Researcher",
+      "department": "video",
+      "reports_to": "chief",
+      "responsibility": "Record audio source, license, business usage scope and proof; trend popularity is not a license.",
+      "inputs": [
+        "script",
+        "reviewed footage",
+        "licensed audio"
+      ],
+      "outputs": [
+        "shot list",
+        "edit specification",
+        "video preview",
+        "subtitle file",
+        "rights record"
+      ],
+      "tools": [
+        "Drive read",
+        "Editly pending audit",
+        "ShortGPT pending audit"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "video_5",
+      "name": "Subtitle Specialist",
+      "department": "video",
+      "reports_to": "chief",
+      "responsibility": "Create and inspect timed Vietnamese–English subtitles for synchronization, line length and correct diacritics.",
+      "inputs": [
+        "script",
+        "reviewed footage",
+        "licensed audio"
+      ],
+      "outputs": [
+        "shot list",
+        "edit specification",
+        "video preview",
+        "subtitle file",
+        "rights record"
+      ],
+      "tools": [
+        "Drive read",
+        "Editly pending audit",
+        "ShortGPT pending audit"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "publishing_1",
+      "name": "Publishing Manager",
+      "department": "publishing",
+      "reports_to": "chief",
+      "responsibility": "Own calendar conflict checks, scoped publication authority, idempotency, provider receipt and readback.",
+      "inputs": [
+        "sealed QC revision",
+        "calendar",
+        "action authority"
+      ],
+      "outputs": [
+        "schedule request",
+        "provider receipt",
+        "community drafts"
+      ],
+      "tools": [
+        "Metricool via operator"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "publishing_2",
+      "name": "Community Assistant",
+      "department": "publishing",
+      "reports_to": "chief",
+      "responsibility": "Draft accurate replies, escalate complaints and sensitive guest details; never send without scoped reply authority.",
+      "inputs": [
+        "sealed QC revision",
+        "calendar",
+        "action authority"
+      ],
+      "outputs": [
+        "schedule request",
+        "provider receipt",
+        "community drafts"
+      ],
+      "tools": [
+        "Metricool via operator"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "publishing_3",
+      "name": "Campaign Coordinator",
+      "department": "publishing",
+      "reports_to": "chief",
+      "responsibility": "Track dependencies, owners, due dates and blocked work; reconcile version changes with the calendar.",
+      "inputs": [
+        "sealed QC revision",
+        "calendar",
+        "action authority"
+      ],
+      "outputs": [
+        "schedule request",
+        "provider receipt",
+        "community drafts"
+      ],
+      "tools": [
+        "Metricool via operator"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "performance_1",
+      "name": "Data Analyst",
+      "department": "performance",
+      "reports_to": "chief",
+      "responsibility": "Map provider fields and report dated observations; distinguish missing metrics from zero and scheduled from published.",
+      "inputs": [
+        "published post IDs",
+        "metric definitions",
+        "dated observations"
+      ],
+      "outputs": [
+        "performance report",
+        "test proposal",
+        "attribution limitations"
+      ],
+      "tools": [
+        "Metricool read via operator",
+        "local analysis"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "performance_2",
+      "name": "Viral Content Analyst",
+      "department": "performance",
+      "reports_to": "chief",
+      "responsibility": "Compare performance against each account baseline and post age; do not use heuristic text scores as view predictions.",
+      "inputs": [
+        "published post IDs",
+        "metric definitions",
+        "dated observations"
+      ],
+      "outputs": [
+        "performance report",
+        "test proposal",
+        "attribution limitations"
+      ],
+      "tools": [
+        "Metricool read via operator",
+        "local analysis"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "performance_3",
+      "name": "Conversion Analyst",
+      "department": "performance",
+      "reports_to": "chief",
+      "responsibility": "Validate campaign tags and booking attribution sources; separate engagement, inquiries, bookings and revenue.",
+      "inputs": [
+        "published post IDs",
+        "metric definitions",
+        "dated observations"
+      ],
+      "outputs": [
+        "performance report",
+        "test proposal",
+        "attribution limitations"
+      ],
+      "tools": [
+        "Metricool read via operator",
+        "local analysis"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "performance_4",
+      "name": "Growth Strategist",
+      "department": "performance",
+      "reports_to": "chief",
+      "responsibility": "Propose measurable experiments with a hypothesis and comparable observation windows; no automatic budget or price changes.",
+      "inputs": [
+        "published post IDs",
+        "metric definitions",
+        "dated observations"
+      ],
+      "outputs": [
+        "performance report",
+        "test proposal",
+        "attribution limitations"
+      ],
+      "tools": [
+        "Metricool read via operator",
+        "local analysis"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "quality_1",
+      "name": "Fact Checker",
+      "department": "quality",
+      "reports_to": "chief",
+      "responsibility": "Verify each claim against dated applicable evidence; reject obsolete prices, ambiguous room types and unsupported inventory.",
+      "inputs": [
+        "all outputs",
+        "source evidence",
+        "rights record",
+        "revision hash"
+      ],
+      "outputs": [
+        "QC decisions",
+        "revision seal",
+        "correction requests"
+      ],
+      "tools": [
+        "Drive read",
+        "local preview"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "quality_2",
+      "name": "Visual Quality Reviewer",
+      "department": "quality",
+      "reports_to": "chief",
+      "responsibility": "Inspect actual render for cropping, resolution, hierarchy, diacritics, disclosures and truthful room representation.",
+      "inputs": [
+        "all outputs",
+        "source evidence",
+        "rights record",
+        "revision hash"
+      ],
+      "outputs": [
+        "QC decisions",
+        "revision seal",
+        "correction requests"
+      ],
+      "tools": [
+        "Drive read",
+        "local preview"
+      ],
+      "runtime_status": "not_deployed"
+    },
+    {
+      "id": "quality_3",
+      "name": "Brand & Copyright Reviewer",
+      "department": "quality",
+      "reports_to": "chief",
+      "responsibility": "Check brand context, image/font/music rights and licensing evidence; reject cross-brand leakage and undocumented reuse.",
+      "inputs": [
+        "all outputs",
+        "source evidence",
+        "rights record",
+        "revision hash"
+      ],
+      "outputs": [
+        "QC decisions",
+        "revision seal",
+        "correction requests"
+      ],
+      "tools": [
+        "Drive read",
+        "local preview"
+      ],
+      "runtime_status": "not_deployed"
+    }
+  ],
+  "brands": [
+    {
+      "id": "sapa_wings",
+      "name": "Sa Pa Wings Hotel",
+      "pilot_enabled": true,
+      "context_status": "provisional_existing_assets",
+      "namespace": "brands/sapa_wings",
+      "timezone": "Asia/Saigon"
+    },
+    {
+      "id": "old_stone",
+      "name": "Old Stone Cocktails & Wine",
+      "pilot_enabled": false,
+      "context_status": "unverified",
+      "namespace": "brands/old_stone",
+      "timezone": "Asia/Saigon"
+    },
+    {
+      "id": "3143",
+      "name": "3143",
+      "pilot_enabled": false,
+      "context_status": "unverified",
+      "namespace": "brands/3143",
+      "timezone": "Asia/Saigon"
+    },
+    {
+      "id": "khong_gian_van_hoa",
+      "name": "Không Gian Văn Hoá",
+      "pilot_enabled": false,
+      "context_status": "unverified",
+      "namespace": "brands/khong_gian_van_hoa",
+      "timezone": "Asia/Saigon"
+    }
+  ],
+  "policy": {
+    "approval": "ask",
+    "computer": "off",
+    "browser": false,
+    "pms_access": "none",
+    "publish_enabled": false,
+    "spend_enabled": false,
+    "external_adapters": "operator_only",
+    "runtime_deployed": false,
+    "max_concurrent_workers": 2
+  },
+  "advisory": [
+    {
+      "name": "Hotel Operations",
+      "status": "read_only_reserved"
+    },
+    {
+      "name": "Revenue",
+      "status": "read_only_reserved"
+    }
+  ],
+  "stages": [
+    {
+      "id": "research",
+      "owner": "research_2",
+      "inputs": [
+        "owner brief"
+      ],
+      "outputs": [
+        "dated source registry"
+      ],
+      "gate": "Sources contain date, provenance and confidence; retrieval is evidence only.",
+      "on_error": "Retry source retrieval twice; then hold for research."
+    },
+    {
+      "id": "trends",
+      "owner": "research_1",
+      "inputs": [
+        "source registry"
+      ],
+      "outputs": [
+        "ranked trend hypotheses"
+      ],
+      "gate": "Use comparable observations and mark uncertainty; no guaranteed viral claim.",
+      "on_error": "Use documented evergreen fallback; never fabricate trend data."
+    },
+    {
+      "id": "brief",
+      "owner": "content_1",
+      "inputs": [
+        "trends",
+        "brand context"
+      ],
+      "outputs": [
+        "content brief"
+      ],
+      "gate": "One brand, objective, audience, format, CTA and fact set.",
+      "on_error": "Return incomplete brief to Chief."
+    },
+    {
+      "id": "script",
+      "owner": "content_3",
+      "inputs": [
+        "content brief"
+      ],
+      "outputs": [
+        "bilingual copy",
+        "shot list"
+      ],
+      "gate": "All claims trace to applicable evidence.",
+      "on_error": "Return unsupported claims to research."
+    },
+    {
+      "id": "production",
+      "owner": "creative_1",
+      "inputs": [
+        "copy",
+        "reviewed assets"
+      ],
+      "outputs": [
+        "editable source",
+        "preview",
+        "asset hashes"
+      ],
+      "gate": "Real imagery, rights record, render inspected; video route uses video_1.",
+      "on_error": "Quarantine failed asset; regenerate draft from eligible source."
+    },
+    {
+      "id": "qc",
+      "owner": "quality_1",
+      "inputs": [
+        "preview",
+        "sources",
+        "rights",
+        "revision"
+      ],
+      "outputs": [
+        "fact pass",
+        "visual pass",
+        "rights pass",
+        "revision seal"
+      ],
+      "gate": "All three QC roles pass same revision; any edit resets QC.",
+      "on_error": "Return to named owner with reasons; no downstream scheduling."
+    },
+    {
+      "id": "publishing",
+      "owner": "publishing_1",
+      "inputs": [
+        "sealed revision",
+        "calendar",
+        "authority"
+      ],
+      "outputs": [
+        "request",
+        "receipt",
+        "readback"
+      ],
+      "gate": "Only scoped authority + verified adapter; deduplicate exact brand/task/revision.",
+      "on_error": "On timeout reconcile by idempotency key before retry; unknown stays unknown."
+    },
+    {
+      "id": "analytics",
+      "owner": "performance_1",
+      "inputs": [
+        "actual published IDs",
+        "dated metrics"
+      ],
+      "outputs": [
+        "measured results"
+      ],
+      "gate": "Actual publication verified; missing values remain null.",
+      "on_error": "Retry read twice; show unavailable metrics without zeros."
+    },
+    {
+      "id": "optimization",
+      "owner": "performance_4",
+      "inputs": [
+        "measured results"
+      ],
+      "outputs": [
+        "next experiment brief"
+      ],
+      "gate": "Comparable age/window; evidence-backed recommendation, no automatic spend.",
+      "on_error": "Insufficient data returns to observation; no fabricated winner."
+    }
+  ],
+  "contracts": {
+    "task_required": [
+      "task_id",
+      "brand_id",
+      "revision",
+      "stage",
+      "owner",
+      "input_refs",
+      "output_refs",
+      "evidence_refs",
+      "state",
+      "attempts"
+    ],
+    "evidence_required": [
+      "source",
+      "observed_at",
+      "valid_until",
+      "brand_id",
+      "rights_status",
+      "sha256"
+    ],
+    "qc_required": [
+      "fact_pass",
+      "visual_pass",
+      "rights_pass",
+      "revision_hash"
+    ],
+    "receipt_required": [
+      "brand_id",
+      "external_id",
+      "scheduled_at",
+      "revision_hash",
+      "readback_verified"
+    ]
+  },
+  "skill_catalog_status": "design_only_not_installed",
+  "skill_catalog": [
+    "brand-context",
+    "trend-evidence",
+    "bilingual-copy",
+    "boutique-layout",
+    "real-photo-qc",
+    "video-rights",
+    "schedule-reconciliation",
+    "metricool-measurement"
+  ]
+}

@@ -21,3 +21,7 @@ No upstream execution; no model credentials; no network access in local workflow
 Before live deployment: pin the exact release/commit; inspect complete dependency lockfile and native download scripts; run upstream isolated fixture and team dry-run; check seven bot permissions; authorize engine and app connections; test prompt-injection resistance, read/write boundaries, duplicate remote creates and revision invalidation; use a protected persistent host with logs, resource limits and recovery. Do not enable broad Full access to avoid ordinary approval prompts.
 
 A static pass is not a security certification. Outstanding limitations are deployment blockers, not reasons to ask the owner to resend existing assets.
+
+## Phase-1 agency extension
+
+The expanded catalog/planner is standard-library-only and has no upstream imports, credentials, shell calls, network or publish methods. Brand isolation and fail-closed rehearsal policy are preflight checks, not authenticated authorization. The legacy workflow is still single-brand; never route the three inactive brands through it. See ARCHITECTURE.md for the sampled review of ShortGPT, Editly and the two skill repositories. None was installed or executed; dependency/lockfile and runtime security review remains outstanding.

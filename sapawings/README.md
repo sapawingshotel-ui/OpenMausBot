@@ -46,3 +46,7 @@ GitHub, Drive and Metricool available in ChatGPT are not automatically inherited
 - Phase 2: isolated upstream fixture, model login, least-privilege connectors, exact-revision QC and draft-only rehearsal.
 - Phase 3: approve live scheduling scope, small campaign, verify publication and metrics.
 - Phase 4: opt-in background service, bounded routines, budgets, audit and recovery. Hotel Operations and Revenue stay read-only until explicitly expanded.
+
+## Expanded agency architecture (phase 1)
+
+See [ARCHITECTURE.md](ARCHITECTURE.md) for the audit, seven departments and live-runtime limitations. `agency.json` defines Chief + 29 specialists, four brand namespaces and nine pipeline contracts. `agency.py` validates the catalog and compiles an eight-bot rehearsal manifest. Only Sa Pa Wings rehearsal is enabled. It has no model dispatcher or external writes and does not replace the legacy workflow. Run `python3 sapawings/agency.py validate` from repository root; the combined local suite now contains 22 tests.
